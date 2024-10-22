@@ -18,21 +18,19 @@ if dimension not in st.session_state.responses or isinstance(st.session_state.re
 
 # Example questions for this dimension
 subdimensions = {
-    "Remote Access": [
-        "Remote Control: Our use-case benefits from enabling remote access and control of machines, physical objects, and environments through digital twins or other IIP technologies.",
-        "Breaking Geographical and Time Constraints: Our use-case would benefit from eliminating geographical and time constraints, allowing users to interact and collaborate remotely across regions.",
-        "Human-Human and Human-Machine Interactions: Our use-case benefits from enabling human-human and human-machine interactions regardless of geographical location, enhancing collaboration and communication.",
-        "Remote Monitoring and Automation: Our use-case benefits from the integration of remote monitoring, real-time data access, and automated task management.",
-        "Safety and Sustainability: Remote work and access ensure user safety, sustainability, and the ability to adapt to unpredictable crises and challenges."
-    ],
-    "Repeatability": [
-        "Safe and Cost-efficient Simulations: Our use-case benefits from the ability to simulate real-world actions repeatedly in a safe environment, reducing costs, risks, and resource usage.",
-        "Flexible and Repeatable Operations: Our use-case benefits from being flexible in terms of space, time, and repetition of actions, which increases productivity and efficiency.",
-        "Virtual Recreational Goods: The ability to create endless copies of virtual goods and recreational content within a repeatable environment benefits our use-case."
+    "Remote": [
+        "Remote Access: It is important for our use-case to provide users with access to digital goods, knowledge, resources or control of machines, physical objects, and environmentsthat they may not have otherwise.",
+        "Breaking Geographical and Time Constraints: Our use-case would benefit from eliminating geographical and time constraints, allowing users to interact and collaborate remotely without physical presence and anytime across regions.",
+        "Human-Human and Human-Machine Interactions: Our use case benefits from enabling human-human and human-machine interactions regardless of geographical or time constraints, enhancing communication, remote monitoring, real-time data access, and automated task management.",
+        "Safety and Sustainability : Remote work and access ensure user safety, sustainability, and the ability to adapt to unpredictable crises and challenges.",
         ],
+    "Repeatability": [
+        "Repeatability: Our use-case benefits from the ability to simulate real-world actions repeatedly in a safe environment, reducing costs, risks, and resource usage."
+        ],
+
     "Public Access": [
         "Inclusivity: Our use-case benefits from providing equal access to knowledge, digital goods, and services regardless of users' geographical location, economic status, or knowledge level.",
-        "Global Participation: Enabling a global audience to participate and collaborate in real-time through our IIP increases diversity, access, and involvement.",
+        "Global Participation: Enabling a global audience to participate and collaborate in real time through our IIP increases diversity, access, and involvement.",
         "Broader Access: Our use-case benefits from giving users access to exclusive or otherwise restricted experiences, operations, or events through our IIP.",
         "Information Sharing: The transfer of real-world information to a digital platform enables faster dissemination of knowledge and collaborative manufacturing."
         ]
@@ -40,7 +38,7 @@ subdimensions = {
 
 # Collect responses
 st.title(f"Assessing the Dimension: {dimension}")
-st.write("Figures out how important it is to make the use-case accessible to a wide range of people, including those with different abilities, and provides a user-friendly experience that can be easily adapted to different technological environments.")
+st.write("INSERT A REASONABLE DEFINITION")
 subdimension_scores = []
 all_answered = True  # A flag to track if all questions are answered
 
@@ -91,7 +89,7 @@ if not all_answered:
 col1, col2 = st.columns([1, 1])
 
 if col1.button("Previous"):
-    st.write("Navigate to the previous page.")
+    st.write("Navigate to the previous page, using the sidebar.")
 
 if col2.button("Next"):
-    st.write("Navigate to the next page.")
+    st.write("Navigate to the next page, using the sidebar.")
