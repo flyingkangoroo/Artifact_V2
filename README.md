@@ -1,12 +1,18 @@
-# 🎈 Blank app template
+# 🎈 Industrial Immersive Platform Assessment Model
 
-A simple Streamlit app template for you to modify!
+A simple Streamlit app designed to help evaluate the readiness of a business use case for transformation into an Industrial Immersive Platform (IIP). This tool enables decision-makers to assess key dimensions such as Accessibility, Collaboration, and Technical Infrastructure, and more, generating both real-time visual insights and detailed PDF reports.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://artifact-v2.streamlit.app/)
 
 ### How to run it on your own machine
 
-1. Install the requirements
+1. Clone the repository
+
+   ```
+   git clone <repository-url>
+   cd business-usecase-assessment-tool
+   ```
+2. Install the requirements
 
    ```
    $ pip install -r requirements.txt
@@ -15,5 +21,28 @@ A simple Streamlit app template for you to modify!
 2. Run the app
 
    ```
-   $ streamlit run streamlit_app.py
+   $ streamlit run artifact-v2_app.py
    ```
+
+# Features
+   # *Interactive Assessment: Assess a business use case across eight key dimensions.*
+   # *Custom Weighting: Assign custom importance weights to each dimension.*
+   # *Radar Chart Visualization: Real-time, weighted radar chart summarizing findings.*
+   # *PDF Export: Download a detailed PDF report including radar charts and dimensional insights.*
+
+# Assessed Dimensions
+   # *Accessibility*
+   # *Use Case Specifics*
+   # *Business & Economy*
+   # *Collaboration*
+   # *Presence*
+   # *Simulation & Modelling*
+   # *Technical Infrastructure*
+   # *Identity & Reputation*
+
+# Credits
+   # THIS PROTOTYPE WAS CREATED AS A PART OF A MASTERTHESIS.
+   """
+   UNAUTHORIZED COPYING IS RESTRICTED.
+   """
+   # for any questions or suggestions reach out to @flyingkangoroo on github.
