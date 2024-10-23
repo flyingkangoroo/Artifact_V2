@@ -58,8 +58,10 @@ def detailed_breakdown_page():
                 charts.append((dimension, chart_path))
 
     st.write("### Download Report")
-    st.write("If you want to save your report for this use case you can download the detailed assessment by pressing the following button. Use these charts to understand specific areas of strength or those requiring improvement. Please make sure that you've completed the entire assessment, else the download might not work.")
-
+    st.write("""
+    If you want to save your report for this use case you can download the detailed assessment by pressing the following button. Use these charts to understand specific areas of strength or those requiring improvement. 
+             \n**Please make sure that you've completed the entire assessment, else the download might not work!**
+             """)
     # Button to export results as PDF
     if st.button("Export Detailed Breakdown as PDF"):
         create_pdf_report(detailed_info, charts)
