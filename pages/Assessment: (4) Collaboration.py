@@ -24,7 +24,7 @@ subdimensions = {
     ],
     "Collaborative Information Layers": [
         "Seamless Interaction: Our use case benefits from interoperability across platforms, seamless connectivity between users and systems, and the ability to interact with digital objects in real time, enhancing collaboration and communication.",
-        "Sensory Feedback: Simulating face-to-face interactions and providing sensory feedback, such as body language and eye contact, enhances user engagement and collaboration in our use case."
+        "Sensory Feedback: Simulating face-to-face interactions and providing sensory feedback, such as body language and eye contact, enhances user engagement and collaboration in our use case.",
         "Teamwork: Our use case benefits from incorporating additional layers of information and testing team collaboration in a risk-free, virtual environment."
     ]
 }
