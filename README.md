@@ -24,25 +24,25 @@ A simple Streamlit app designed to help evaluate the readiness of a business use
    $ streamlit run artifact-v2_app.py
    ```
 
-# Features
-   # *Interactive Assessment: Assess a business use case across eight key dimensions.*
-   # *Custom Weighting: Assign custom importance weights to each dimension.*
-   # *Radar Chart Visualization: Real-time, weighted radar chart summarizing findings.*
-   # *PDF Export: Download a detailed PDF report including radar charts and dimensional insights.*
+### Features
+   - Interactive Assessment: Assess a business use case across eight key dimensions.
+   - Custom Weighting: Assign custom importance weights to each dimension.
+   - Radar Chart Visualization: Real-time, weighted radar chart summarizing findings.
+   - PDF Export: Download a detailed PDF report including radar charts and dimensional insights.
 
-# Assessed Dimensions
-   # *Accessibility*
-   # *Use Case Specifics*
-   # *Business & Economy*
-   # *Collaboration*
-   # *Presence*
-   # *Simulation & Modelling*
-   # *Technical Infrastructure*
-   # *Identity & Reputation*
+### Assessed Dimensions
+   1. *Accessibility*
+   2. *Use Case Specifics*
+   3. *Business & Economy*
+   4. *Collaboration*
+   5. *Presence*
+   6. *Simulation & Modelling*
+   7. *Technical Infrastructure*
+   8. *Identity & Reputation*
 
-# Credits
-   # THIS PROTOTYPE WAS CREATED AS A PART OF A MASTERTHESIS.
-   """
-   UNAUTHORIZED COPYING IS RESTRICTED.
-   """
-   # for any questions or suggestions reach out to @flyingkangoroo on github.
+### Credits
+THIS PROTOTYPE WAS CREATED AS A PART OF A MASTERTHESIS.
+--- --- ---
+**UNAUTHORIZED COPYING IS RESTRICTED**
+--- --- ---
+For any questions or suggestions reach out to @flyingkangoroo on github.
