@@ -41,7 +41,7 @@ A simple Streamlit app designed to help evaluate the readiness of a business use
    8. *Identity & Reputation*
 
 ### Credits
-THIS PROTOTYPE WAS CREATED AS A PART OF A MASTERTHESIS.
+This prototype was created as a part of a masterthesis.
 --- --- ---
 **UNAUTHORIZED COPYING IS RESTRICTED**
 --- --- ---
