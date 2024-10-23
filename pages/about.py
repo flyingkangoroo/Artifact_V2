@@ -1,18 +1,18 @@
 import streamlit as st
 
 # Set page title and layout
-st.set_page_config(page_title="About the Business Use-Case Viability Model", layout="centered")
+st.set_page_config(page_title="About the IIP-Assessment Model", layout="centered")
 
 # Page title
-st.title("About the Business Use-Case Viability Assessment Model")
+st.title("About the IIP-Assessment Model")
 
 # Introduction section
 st.markdown("""
 ### Overview
 
-The **Business Use-Case Viability Assessment Tool** is part of a prototype developed during a **Master's Thesis**. This model evaluates the feasibility of business use-cases that may benefit from **Industrial Immersive Platforms (IIPs)**, like those found in the **Industrial Metaverse**.
+The **IIP-Assessment Model** is part of a prototype developed during a **Master's Thesis**. This model evaluates the feasibility of business use-cases that may benefit from **Industrial Immersive Platforms (IIPs)**, like those found in the **Industrial Metaverse**.
 
-This tool was constructed as part of a research project aimed at exploring how businesses can leverage immersive platforms to optimize their operations. It combines several research approaches, including literature reviews and qualitative interviews, to create a practical and academically informed framework.
+This tool was constructed as part of a research project aimed at exploring how businesses can leverage industriyl immersive platforms (IIP) to optimize their operations. It combines several research approaches, including literature reviews and qualitative interviews, to create a practical and academically informed framework.
 
 ---
 
