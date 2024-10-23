@@ -31,7 +31,7 @@ subdimensions = {
 
 # Collect responses
 st.title(f"Assessing the Dimension: {dimension}")
-st.write("INSERT A REASONABLE DEFINITION.")
+st.write("The Collaboration dimension assesses how effectively the immersive platform facilitates teamwork and co-creation in virtual environments. It looks at the ability to simulate corporate settings, provide collaborative spaces, and enable seamless interaction among users and systems, regardless of geographical barriers. This dimension also evaluates how well the platform supports real-time communication, sensory feedback, and the integration of multiple information layers to enhance teamwork and engagement.")
 subdimension_scores = []
 all_answered = True  # A flag to track if all questions are answered
 

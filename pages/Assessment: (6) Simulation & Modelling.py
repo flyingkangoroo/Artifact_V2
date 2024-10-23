@@ -34,7 +34,7 @@ subdimensions = {
 
 # Collect responses
 st.title(f"Assessing the Dimension: {dimension}")
-st.write("INSERT A REASONABLE DEFINITION.")
+st.write("The Simulation & Modelling dimension assesses how effectively the immersive platform replicates real-world processes and environments. It focuses on reducing risks through virtual simulations, enabling hands-on practice, and supporting training scenarios that would otherwise be constrained by physical or geographical limitations. This dimension also evaluates the synchronization between physical and digital systems, process optimization, and human-machine collaboration, helping organizations improve efficiency, reduce errors, and create immersive experiences for better problem-solving and innovation.")
 subdimension_scores = []
 all_answered = True  # A flag to track if all questions are answered
 

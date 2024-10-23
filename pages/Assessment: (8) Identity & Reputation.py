@@ -36,7 +36,7 @@ subdimensions = {
 
 # Collect responses
 st.title(f"Assessing the Dimension: {dimension}")
-st.write("Focuses on how important the support of creation, management, and evolution of user identities, and the creation and maintenance of the users virtual reputation within the virtaul environment is. This includes degrees of immersion, personalization, and multiple forms of interaction and collaboration.")
+st.write("The Identity & Reputation dimension assesses how well the immersive platform supports personalization and user engagement. It evaluates the platform’s ability to customize products and services to meet individual user needs and offer hyper-personalized experiences. This dimension also considers how the platform fosters social interaction, shared experiences, and the creation of virtual identities, while promoting inclusivity and emotional engagement. It emphasizes the role of user segmentation and motivation in enhancing both user experience and brand reputation within virtual environments.")
 subdimension_scores = []
 all_answered = True  # A flag to track if all questions are answered
 

@@ -20,7 +20,7 @@ if dimension not in st.session_state.responses or isinstance(st.session_state.re
 subdimensions = {
     "Technological Foundation": [
         "Technology Readiness: We have the necessary technology, expertise, and infrastructure, including standardized formats and secure systems, to successfully implement and integrate an immersive platform into our processes.",
-        "Data Standards:Our use case benefits from well-defined data standards, governance, and privacy protections to ensure smooth data sharing and technical security within the immersive platform."
+        "Data Standards: Our use case benefits from well-defined data standards, governance, and privacy protections to ensure smooth data sharing and technical security within the immersive platform."
     ],
     "Technological Features": [
         "Interoperability: Ensuring interoperability across platforms, devices, and departments improves our use case by enabling seamless data exchange, collaboration, and operational flexibility.",
@@ -37,7 +37,7 @@ subdimensions = {
 
 # Collect responses
 st.title(f"Assessing the Dimension: {dimension}")
-st.write("INSERT A REASONABLE DEFINITION.")
+st.write("The Technical Infrastructure dimension evaluates the readiness and suitability of the technology supporting the immersive platform. It focuses on the availability of necessary systems, data standards, and security measures, while ensuring interoperability across platforms and devices. This dimension also assesses the integration of real-time systems, IoT devices, and automation to enhance operations, data sharing, and collaboration. Additionally, it considers the platform’s practical applicability and scalability within the organization’s existing infrastructure.")
 subdimension_scores = []
 all_answered = True  # A flag to track if all questions are answered
 

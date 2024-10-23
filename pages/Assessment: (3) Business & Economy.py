@@ -39,7 +39,7 @@ subdimensions = {
 
 # Collect responses
 st.title(f"Assessing the Dimension: {dimension}")
-st.write("INSERT A REASONABLE DEFINITION.")
+st.write("The Business & Economy dimension evaluates the financial viability and operational benefits of integrating an immersive platform. It looks at the availability of resources, budget, and technology needed for successful implementation, while considering potential cost savings and performance improvements. This dimension also assesses operational flexibility, risk mitigation, and the platform’s ability to support new business models, expand customer reach, and solve complex real-world challenges through simulations and decentralized operations.")
 subdimension_scores = []
 all_answered = True  # A flag to track if all questions are answered
 

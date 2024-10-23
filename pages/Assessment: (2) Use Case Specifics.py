@@ -37,7 +37,7 @@ subdimensions = {
 
 # Collect responses
 st.title(f"Assessing the Dimension: {dimension}")
-st.write("INSERT A REASONABLE DEFINITION.")
+st.write("Use Case Specifics evaluates how well the immersive platform enhances the value of the specific application it is being integrated into. It examines the strategic alignment with company goals, readiness of the organization and users for digital transformation, and ease of integration into existing systems. This dimension also considers user satisfaction, engagement, and the overall customer journey, ensuring the platform adds meaningful value to both the business and its users..")
 subdimension_scores = []
 all_answered = True  # A flag to track if all questions are answered
 

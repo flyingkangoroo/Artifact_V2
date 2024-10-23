@@ -38,7 +38,7 @@ subdimensions = {
 
 # Collect responses
 st.title(f"Assessing the Dimension: {dimension}")
-st.write("INSERT A REASONABLE DEFINITION")
+st.write("Accessibility assesses how well the platform enables users to overcome geographical, time, and physical barriers to interact with digital resources, machines, or environments. It evaluates the ease with which users can engage in remote operations, collaborate in real-time, and access critical information. This dimension also looks at inclusivity, ensuring the platform can be used by people from diverse locations and backgrounds, while offering repeatable, safe, and sustainable access to otherwise restricted or exclusive experiences.")
 subdimension_scores = []
 all_answered = True  # A flag to track if all questions are answered
 
