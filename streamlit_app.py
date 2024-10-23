@@ -19,14 +19,14 @@ st.markdown("""
 This tool is designed to help you evaluate the viability of a business use-case that may be transformed into an industrial immersive platform (IIP). 
 
 The assessment will guide you through the following eight empirical arised and validated dimensions:
-- **Identity & Reputation**
-- **Presence**
-- **Social Interactions**
-- **Collaboration**
 - **Accessibility**
-- **Economy & Transactions**
-- **Technology, Structure & Ecosystems**
+- **Use Case Specifics**
+- **Business & Economy**
+- **Collaboration**
+- **Presence**
 - **Simulation & Modelling**
+- **Technical Infrastructure**
+- **Identity & reputation**
 
 
 Each of these dimensions has been carefully chosen to reflect key aspects of a business use-case and its potential as an IIP. You will answer a series of questions related to each dimension, and the results will be visualized in real time. The survey will save your answers unless you don't refresh your browser. This survey takes about 20minutes.
