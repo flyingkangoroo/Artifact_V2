@@ -37,7 +37,7 @@ subdimensions = {
 
 # Collect responses
 st.title(f"Assessing the Dimension: {dimension}")
-st.write("The Technical Infrastructure dimension evaluates the readiness and suitability of the technology supporting the immersive platform. It focuses on the availability of necessary systems, data standards, and security measures, while ensuring interoperability across platforms and devices. This dimension also assesses the integration of real-time systems, IoT devices, and automation to enhance operations, data sharing, and collaboration. Additionally, it considers the platform’s practical applicability and scalability within the organization’s existing infrastructure.")
+st.write("Here, the focus is on whether the current technological framework can support the shift to immersive environments. This dimension considers the readiness of the existing systems, interoperability across devices, and the ability to handle real-time data flows and interactions. It also explores whether the platform can integrate advanced technologies, such as IoT and automation, to enhance data visualization and user interaction, ensuring that the transition is seamless and scalable.")
 subdimension_scores = []
 all_answered = True  # A flag to track if all questions are answered
 

@@ -34,7 +34,7 @@ subdimensions = {
 
 # Collect responses
 st.title(f"Assessing the Dimension: {dimension}")
-st.write("The Simulation & Modelling dimension assesses how effectively the immersive platform replicates real-world processes and environments. It focuses on reducing risks through virtual simulations, enabling hands-on practice, and supporting training scenarios that would otherwise be constrained by physical or geographical limitations. This dimension also evaluates the synchronization between physical and digital systems, process optimization, and human-machine collaboration, helping organizations improve efficiency, reduce errors, and create immersive experiences for better problem-solving and innovation.")
+st.write("This dimension evaluates the potential for simulating real-world processes and scenarios in an immersive environment. It looks at whether the use case could benefit from virtual environments to reduce risks, enhance hands-on training, or optimize complex operations through modeling. It also assesses how closely the digital simulation can synchronize with real-world systems, enabling real-time monitoring, control, or predictive decision-making, all of which can improve efficiency and safety.")
 subdimension_scores = []
 all_answered = True  # A flag to track if all questions are answered
 

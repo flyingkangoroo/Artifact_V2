@@ -37,7 +37,7 @@ subdimensions = {
 
 # Collect responses
 st.title(f"Assessing the Dimension: {dimension}")
-st.write("Use Case Specifics evaluates how well the immersive platform enhances the value of the specific application it is being integrated into. It examines the strategic alignment with company goals, readiness of the organization and users for digital transformation, and ease of integration into existing systems. This dimension also considers user satisfaction, engagement, and the overall customer journey, ensuring the platform adds meaningful value to both the business and its users..")
+st.write("Here, the focus is on the strategic readiness and unique attributes of the current process. It looks at whether the goals are well-defined and if the use case is aligned with the core advantages of immersive environments. This dimension also evaluates the cultural and organizational readiness to adapt, ensuring that the transition would not only be technically feasible but also enhance the overall value of the process through immersion.")
 subdimension_scores = []
 all_answered = True  # A flag to track if all questions are answered
 

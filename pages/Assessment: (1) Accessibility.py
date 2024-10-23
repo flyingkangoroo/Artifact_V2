@@ -38,7 +38,7 @@ subdimensions = {
 
 # Collect responses
 st.title(f"Assessing the Dimension: {dimension}")
-st.write("Accessibility assesses how well the platform enables users to overcome geographical, time, and physical barriers to interact with digital resources, machines, or environments. It evaluates the ease with which users can engage in remote operations, collaborate in real-time, and access critical information. This dimension also looks at inclusivity, ensuring the platform can be used by people from diverse locations and backgrounds, while offering repeatable, safe, and sustainable access to otherwise restricted or exclusive experiences.")
+st.write("This dimension explores whether the current business process or operation could effectively benefit from removing physical, geographical, or time-based constraints in an immersive environment. It examines the potential for expanding access to remote operations, collaboration, or broader inclusivity by utilizing immersive technologies, and assesses whether the use case could offer improved accessibility for users who are otherwise limited by traditional methods.")
 subdimension_scores = []
 all_answered = True  # A flag to track if all questions are answered
 

@@ -36,7 +36,7 @@ subdimensions = {
 
 # Collect responses
 st.title(f"Assessing the Dimension: {dimension}")
-st.write("The Identity & Reputation dimension assesses how well the immersive platform supports personalization and user engagement. It evaluates the platform’s ability to customize products and services to meet individual user needs and offer hyper-personalized experiences. This dimension also considers how the platform fosters social interaction, shared experiences, and the creation of virtual identities, while promoting inclusivity and emotional engagement. It emphasizes the role of user segmentation and motivation in enhancing both user experience and brand reputation within virtual environments.")
+st.write("This dimension explores how the current use case can leverage immersive technologies to enhance personalization, user engagement, and trust. It assesses the potential for creating unique virtual identities, offering personalized experiences, and fostering social interaction within immersive environments. Additionally, it looks at whether the use case can build or maintain a positive reputation by supporting inclusive, empathetic, and secure user experiences, thereby strengthening brand loyalty and user satisfaction in a digital space.")
 subdimension_scores = []
 all_answered = True  # A flag to track if all questions are answered
 

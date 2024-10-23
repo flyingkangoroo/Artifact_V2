@@ -31,7 +31,7 @@ subdimensions = {
 
 # Collect responses
 st.title(f"Assessing the Dimension: {dimension}")
-st.write("The Collaboration dimension assesses how effectively the immersive platform facilitates teamwork and co-creation in virtual environments. It looks at the ability to simulate corporate settings, provide collaborative spaces, and enable seamless interaction among users and systems, regardless of geographical barriers. This dimension also evaluates how well the platform supports real-time communication, sensory feedback, and the integration of multiple information layers to enhance teamwork and engagement.")
+st.write("This dimension assesses whether current collaborative processes could be enhanced through immersive technologies. It explores how the transition to a virtual environment could support remote teamwork, co-creation, and real-time interaction. It also considers the platform's ability to replicate real-world communication dynamics, such as body language and sensory feedback, which could lead to more effective and engaging collaboration between teams or partners across locations.")
 subdimension_scores = []
 all_answered = True  # A flag to track if all questions are answered
 

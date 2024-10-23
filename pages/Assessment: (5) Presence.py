@@ -35,7 +35,7 @@ subdimensions = {
 
 # Collect responses
 st.title(f"Assessing the Dimension: {dimension}")
-st.write("The Presence dimension evaluates how the immersive platform contributes through providing a realistic and engaging environment that mirrors real-world scenarios. It focuses on multisensory immersion, including visual, auditory, and tactile feedback, as well as natural human interactions such as gestures and facial expressions. This dimension also assesses the platform’s ability to foster emotional engagement, simulate real-time social interactions, and provide users with dynamic, authentic experiences that enhance the sense of being “present” in a virtual space.")
+st.write("Presence examines the potential for immersive technologies to create more engaging and realistic experiences. It focuses on whether integrating multisensory elements, such as visual, auditory, or tactile feedback, could enhance user immersion and emotional engagement. This dimension looks at how real-world dynamics—such as human interactions, spatial awareness, and social cues—can be recreated in a virtual space to improve engagement and outcomes in tasks, training, or communication.")
 subdimension_scores = []
 all_answered = True  # A flag to track if all questions are answered
 
