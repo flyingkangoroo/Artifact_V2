@@ -132,14 +132,14 @@ def create_pdf_report(detailed_info, charts):
     pdf.multi_cell(0,10, txt="This model was developed as part of a mastersthesis and is currently a prototype. For full reliability, further validation cycles are required.")
     pdf.ln(20)
     pdf.image(radar_chart_path, x=15, w=180)
-    pdf.ln(20)
+    pdf.ln(10)
 
     # Adding Final Readiness Score
     pdf.set_font("Arial", 'B', size=16)
     pdf.cell(200, 10, txt="Final Readiness Score", ln=True, align='C')
     pdf.set_font("Arial", size=12)
-    pdf.cell(200, 10, txt=f"Overall Readiness Score: {final_readiness_score:.2f} / 5", ln=True, align='C')
-    pdf.ln(20)
+    pdf.cell(200, 10, txt=f"Your Overall Readiness Score: {final_readiness_score:.2f} / 5", ln=True, align='C')
+    pdf.ln(10)
     pdf.multi_cell(0,10,txt="The Overall Readiness Score provides an average assessment based on the values you entered. We recommend conducting a detailed review of each subdimension to gain a deeper understanding. This tool is intended to support your decision-making process, but it is important not to rely solely on the overall score. Use the detailed insights provided to conduct a thorough analysis that suits the specifics of your case.")
     pdf.ln(20)
 
