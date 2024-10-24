@@ -12,8 +12,7 @@ def detailed_breakdown_page():
     st.write("Below, you'll find a deeper analysis of each dimension with a breakdown of individual subdimensions.")
 
     if 'responses' not in st.session_state:
-        st.write("No responses found. Please complete the assessment first.")
-        return
+        st.session_state.responses = {}  # Initialize with empty responses if none exist
 
     responses = st.session_state.responses
     all_dimensions = [
@@ -34,28 +33,32 @@ def detailed_breakdown_page():
     for dimension in all_dimensions:
         if dimension in responses and isinstance(responses[dimension], dict) and 'questions' in responses[dimension]:
             subdimensions = responses[dimension]['questions']
-            st.subheader(f"{dimension} Breakdown")
+        else:
+            # Default values for subdimensions if not available
+            subdimensions = {f"{dimension}-Default": 3}
 
-            # Shorten subdimension names for visualization purposes by extracting the part after the first dash
-            sub_names = [key.split('-', 1)[-1].split(':', 1)[0].strip() for key in subdimensions.keys()]
-            sub_scores = list(subdimensions.values())
+        st.subheader(f"{dimension} Breakdown")
 
-            # Collecting information for PDF export
-            detailed_info.append((dimension, sub_names, sub_scores))
+        # Shorten subdimension names for visualization purposes by extracting the part after the first dash
+        sub_names = [key.split('-', 1)[-1].split(':', 1)[0].strip() for key in subdimensions.keys()]
+        sub_scores = list(subdimensions.values())
 
-            # Plotting each subdimension using matplotlib
-            fig, ax = plt.subplots()
-            ax.barh(sub_names, sub_scores, color='darkblue')
-            ax.set_xlabel('Score')
-            ax.set_xlim(0, 5)
-            ax.set_title(f"Subdimension Scores for {dimension}")
+        # Collecting information for PDF export
+        detailed_info.append((dimension, sub_names, sub_scores))
 
-            st.pyplot(fig)
-            # Save figure for PDF
-            with tempfile.NamedTemporaryFile(delete=False, suffix=".png") as tmp_file:
-                chart_path = tmp_file.name
-                plt.savefig(chart_path)
-                charts.append((dimension, chart_path))
+        # Plotting each subdimension using matplotlib
+        fig, ax = plt.subplots()
+        ax.barh(sub_names, sub_scores, color='darkblue')
+        ax.set_xlabel('Score')
+        ax.set_xlim(0, 5)
+        ax.set_title(f"Subdimension Scores for {dimension}")
+
+        st.pyplot(fig)
+        # Save figure for PDF
+        with tempfile.NamedTemporaryFile(delete=False, suffix=".png") as tmp_file:
+            chart_path = tmp_file.name
+            plt.savefig(chart_path)
+            charts.append((dimension, chart_path))
 
     st.write("### Download Report")
     st.write("""
@@ -83,7 +86,7 @@ def create_pdf_report(detailed_info, charts):
         "Identity & Reputation"
     ]
     dimension_weights = st.session_state.get('dimension_weights', {dimension: 1.0 for dimension in all_dimensions})  # Use weights from session_state if available
-    values = [responses[dimension]['overall'] if 'overall' in responses[dimension] else 3 for dimension in all_dimensions]
+    values = [responses.get(dimension, {}).get('overall', 3) for dimension in all_dimensions]
     weighted_sum = sum(values[i] * dimension_weights[dimension] for i, dimension in enumerate(all_dimensions))
     total_weight = sum(dimension_weights.values())
     final_readiness_score = weighted_sum / total_weight if total_weight != 0 else 0
