@@ -28,7 +28,7 @@ subdimensions = {
         "Repeatability: Our use-case benefits from the ability to simulate real-world actions repeatedly in a safe environment, reducing costs, risks, and resource usage."
         ],
 
-    "Public Access": [
+    "Access": [
         "Inclusivity: Our use-case benefits from providing equal access to knowledge, digital goods, and services regardless of users' geographical location, economic status, or knowledge level.",
         "Global Participation: Enabling a global audience to participate and collaborate in real time through our IIP increases diversity, access, and involvement.",
         "Broader Access: Our use-case benefits from giving users access to exclusive or otherwise restricted experiences, operations, or events through our IIP.",
