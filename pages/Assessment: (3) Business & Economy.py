@@ -22,7 +22,9 @@ subdimensions = {
         "Resources: We have the financial and operational resources necessary to develop, implement, and manage an immersive platform.",
         "Technology: We have the necessary technology, technical expertise, and infrastructure to successfully implement and support an immersive platform.",
         "Budget: We have the budget and expect a positive cost-benefit ratio, with significant resource savings, through the integration of an immersive platform.",
-        "Performance: We can enhance performance, reduce failure rates, and mitigate risks through the integration of an immersive platform, with confidence in the quality of our data."
+        "Performance: We can enhance performance, reduce failure rates, and mitigate risks through the integration of an immersive platform, with confidence in the quality of our data.",
+        "Data: We have the necessary data to develop and operate an industrial immersive platform."
+    
     ],
     "Operations": [
         "Operational Flexibility: Our use-case benefits from enhancing operational flexibility and making better decisions by leveraging real-time data and IIP-based simulations.",
