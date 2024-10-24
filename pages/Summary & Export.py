@@ -60,17 +60,12 @@ def detailed_breakdown_page():
             charts.append((dimension, chart_path))
 
     st.write("### Download Report")
-    st.write(
-        """
-        If you want to save your report for this use case, you can download the detailed assessment by pressing the following button. Use these charts to understand specific areas of strength or those requiring improvement.
-        
-        ---
-        
-        **Please make sure that you've completed the entire assessment, else the download might not work!**
-        
-        ---
-        """
-    )
+    st.write("""
+    If you want to save your report for this use case you can download the detailed assessment by pressing the following button. Use these charts to understand specific areas of strength or those requiring improvement. 
+             \n---
+             \n**Please make sure that you've completed the entire assessment, else the download might not work!**
+             \n---
+             """)
     # Button to export results as PDF
     if st.button("Export Detailed Breakdown as PDF"):
         create_pdf_report(detailed_info, charts)
@@ -120,38 +115,36 @@ def create_pdf_report(detailed_info, charts):
 
     # Title Page
     pdf.add_page()
-    pdf.set_font("Helvetica", 'B', size=20)
+    pdf.set_font("Arial", 'B', size=20)
     pdf.cell(200, 20, txt="IIP-Assessment Model Results", ln=True, align='C')
     pdf.ln(10)
-    pdf.set_font("Helvetica", 'I', size=14)
+    pdf.set_font("Arial", 'I', size=14)
     pdf.cell(200, 10, txt="Evaluating Your Business Use Case for Immersive Platform Readiness", ln=True, align='C')
     pdf.ln(20)
-    pdf.set_font("Helvetica", size=12)
-    pdf.multi_cell(0, 10, txt="The Industrial Immersive Platform (IIP) Assessment Model is designed to evaluate the readiness of a business use case for transformation into an immersive environment. This report provides a comprehensive breakdown of the subdimension results, offering valuable insights that contribute to the overall readiness score."))
+    pdf.set_font("Arial", size=12)
+    pdf.multi_cell(0, 10, txt="The Industrial Immersive Platform (IIP) Assessment Model is designed to evaluate the readiness of a business use case for transformation into an immersive environment. This report provides a detailed breakdown of the subdimension results, offering insights that contribute to the overall readiness score.")
+    pdf.set_font("Arial", size=12)
     pdf.multi_cell(0, 10, txt="The report is divided into two sections. First, you will receive a radar plot that reflects any adjustments you've made by applying weights to the dimensions. If no weights were added, you’ll receive the default radar plot, which displays the average results based on your assessment responses. As averages may not always capture the full picture, we encourage you to delve deeper into each dimension for a more nuanced understanding.")
+    pdf.set_font("Arial", size=12)
     pdf.multi_cell(0, 10, txt="In the second section, we provide a detailed breakdown of each dimension, presented through boxplots. This helps to visualize how your use case performs across various categories. If any category was left unanswered, the values will default to 3.")
-    pdf.set_font("Helvetica", style="B", size=12)
-    pdf.multi_cell(0, 10, "Disclaimer:")
-    pdf.set_font("Helvetica", size=12)
-    pdf.multi_cell(0, 10, txt="Please note that the Industrial Immersive Platform Assessment Model is currently a prototype. If you are actively evaluating a business case, we recommend conducting further analysis based on the dimensions provided.")
     pdf.ln(20)
     pdf.image(radar_chart_path, x=15, w=180)
     pdf.ln(20)
 
     # Adding Final Readiness Score
-    pdf.set_font("Helvetica", 'B', size=16)
+    pdf.set_font("Arial", 'B', size=16)
     pdf.cell(200, 10, txt="Final Readiness Score", ln=True, align='C')
-    pdf.set_font("Helvetica", size=12)
+    pdf.set_font("Arial", size=12)
     pdf.cell(200, 10, txt=f"Overall Readiness Score: {final_readiness_score:.2f} / 5", ln=True, align='C')
     pdf.ln(20)
 
     # Adding Detailed Results
     for (dimension, sub_names, sub_scores), (chart_dimension, chart_path) in zip(detailed_info, charts):
         pdf.add_page()
-        pdf.set_font("Helvetica", 'B', size=16)
+        pdf.set_font("Arial", 'B', size=16)
         pdf.cell(200, 10, txt=f"{dimension} - Detailed Breakdown", ln=True, align='C')
         pdf.ln(10)
-        pdf.set_font("Helvetica", size=10)
+        pdf.set_font("Arial", size=10)
         for sub_name, sub_score in zip(sub_names, sub_scores):
             pdf.cell(200, 8, txt=f"- {sub_name}: Score - {sub_score}", ln=True)
         pdf.ln(10)
