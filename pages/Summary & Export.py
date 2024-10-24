@@ -122,9 +122,7 @@ def create_pdf_report(detailed_info, charts):
     pdf.cell(200, 10, txt="Evaluating Your Business Use Case for Immersive Platform Readiness", ln=True, align='C')
     pdf.ln(20)
     pdf.set_font("Arial", size=12)
-    # Clean the text of non-ASCII characters
-    text1 = "The Industrial Immersive Platform (IIP) Assessment Model is designed to evaluate the readiness of a business use case for transformation into an immersive environment. This report provides a detailed breakdown of the subdimension results, offering insights that contribute to the overall readiness score. The report is divided into two sections. First, you will receive a radar plot that reflects any adjustments you've made by applying weights to the dimensions. If no weights were added, you'll receive the default radar plot, which displays the average results based on your assessment responses. As averages may not always capture the full picture, we encourage you to delve deeper into each dimension for a more nuanced understanding. In the second section, we provide a detailed breakdown of each dimension, presented through boxplots. This helps to visualize how your use case performs across various categories. If any category was left unanswered, the values will default to 3.".encode('ascii', 'ignore').decode()
-    pdf.multi_cell(0, 10, txt=text1)
+    pdf.multi_cell(0, 10, txt="The Industrial Immersive Platform (IIP) Assessment Model is designed to evaluate the readiness of a business use case for transformation into an immersive environment. This report provides a detailed breakdown of the subdimension results, offering insights that contribute to the overall readiness score.")
     pdf.ln(20)
     pdf.image(radar_chart_path, x=15, w=180)
     pdf.ln(20)
@@ -133,8 +131,7 @@ def create_pdf_report(detailed_info, charts):
     pdf.set_font("Arial", 'B', size=16)
     pdf.cell(200, 10, txt="Final Readiness Score", ln=True, align='C')
     pdf.set_font("Arial", size=12)
-    final_score_text = f"Overall Readiness Score: {final_readiness_score:.2f} / 5".encode('ascii', 'ignore').decode()
-    pdf.cell(200, 10, txt=final_score_text, ln=True, align='C')
+    pdf.cell(200, 10, txt=f"Overall Readiness Score: {final_readiness_score:.2f} / 5", ln=True, align='C')
     pdf.ln(20)
 
     # Adding Detailed Results
@@ -145,8 +142,7 @@ def create_pdf_report(detailed_info, charts):
         pdf.ln(10)
         pdf.set_font("Arial", size=10)
         for sub_name, sub_score in zip(sub_names, sub_scores):
-            sub_score_text = f"- {sub_name}: Score - {sub_score}".encode('ascii', 'ignore').decode()
-            pdf.cell(200, 8, txt=sub_score_text, ln=True)
+            pdf.cell(200, 8, txt=f"- {sub_name}: Score - {sub_score}", ln=True)
         pdf.ln(10)
         # Add the corresponding chart to the PDF
         pdf.image(chart_path, x=15, w=180)
