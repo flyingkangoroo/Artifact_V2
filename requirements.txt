@@ -4,6 +4,3 @@ numpy
 pandas
 plotly
 fpdf
-textwrap
-tempfile
-os
