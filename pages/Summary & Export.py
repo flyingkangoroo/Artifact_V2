@@ -128,7 +128,7 @@ def create_pdf_report(detailed_info, charts):
     pdf.set_font("Arial", 'B', size=12)
     pdf.ln(20)
     pdf.cell(0,10, txt="DISCLAIMER:", align='C')
-    pdf.multi_cell(0,10, txt="This model was developed as part of a mastersthesis and is currently a prototype. For full reliability, further validation cycles are required.", align='C')
+    pdf.multi_cell(0,10, txt="This model was developed as part of a mastersthesis and is currently a prototype. For full reliability, further validation cycles are required.")
     pdf.ln(20)
     pdf.image(radar_chart_path, x=15, w=180)
     pdf.ln(20)
@@ -141,7 +141,7 @@ def create_pdf_report(detailed_info, charts):
     pdf.ln(20)
     pdf.multi_cell(0,10,txt="The Overall Readiness Score provides an average assessment based on the values you entered. We recommend conducting a detailed review of each subdimension to gain a deeper understanding. This tool is intended to support your decision-making process, but it is important not to rely solely on the overall score. Use the detailed insights provided to conduct a thorough analysis that suits the specifics of your case.")
     pdf.ln(20)
-    
+
     # Adding Detailed Results
     for (dimension, sub_names, sub_scores), (chart_dimension, chart_path) in zip(detailed_info, charts):
         pdf.add_page()
