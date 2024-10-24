@@ -120,13 +120,13 @@ def create_pdf_report(detailed_info, charts):
 
     # Title Page
     pdf.add_page()
-    pdf.set_font("Arial", 'B', size=20)
+    pdf.set_font("Helvetica", 'B', size=20)
     pdf.cell(200, 20, txt="IIP-Assessment Model Results", ln=True, align='C')
     pdf.ln(10)
-    pdf.set_font("Arial", 'I', size=14)
+    pdf.set_font("Helvetica", 'I', size=14)
     pdf.cell(200, 10, txt="Evaluating Your Business Use Case for Immersive Platform Readiness", ln=True, align='C')
     pdf.ln(20)
-    pdf.set_font("Arial", size=12)
+    pdf.set_font("Helvetica", size=12)
     pdf.multi_cell(0, 10, txt=(
         "The Industrial Immersive Platform (IIP) Assessment Model "
         "is designed to evaluate the readiness of a business use case for transformation "
@@ -147,9 +147,9 @@ def create_pdf_report(detailed_info, charts):
         "through boxplots. This helps to visualize how your use case performs across various "
         "categories. If any category was left unanswered, the values will default to 3."
     ))
-    pdf.set_font("Arial", style="B", size=12)
+    pdf.set_font("Helvetica", style="B", size=12)
     pdf.multi_cell(0, 10, "Disclaimer:")
-    pdf.set_font("Arial", size=12)
+    pdf.set_font("Helvetica", size=12)
     pdf.multi_cell(0, 10, txt=(
         "Please note that the Industrial Immersive Platform Assessment Model is "
         "currently a prototype. If you are actively evaluating a business case, "
@@ -160,19 +160,19 @@ def create_pdf_report(detailed_info, charts):
     pdf.ln(20)
 
     # Adding Final Readiness Score
-    pdf.set_font("Arial", 'B', size=16)
+    pdf.set_font("Helvetica", 'B', size=16)
     pdf.cell(200, 10, txt="Final Readiness Score", ln=True, align='C')
-    pdf.set_font("Arial", size=12)
+    pdf.set_font("Helvetica", size=12)
     pdf.cell(200, 10, txt=f"Overall Readiness Score: {final_readiness_score:.2f} / 5", ln=True, align='C')
     pdf.ln(20)
 
     # Adding Detailed Results
     for (dimension, sub_names, sub_scores), (chart_dimension, chart_path) in zip(detailed_info, charts):
         pdf.add_page()
-        pdf.set_font("Arial", 'B', size=16)
+        pdf.set_font("Helvetica", 'B', size=16)
         pdf.cell(200, 10, txt=f"{dimension} - Detailed Breakdown", ln=True, align='C')
         pdf.ln(10)
-        pdf.set_font("Arial", size=10)
+        pdf.set_font("Helvetica", size=10)
         for sub_name, sub_score in zip(sub_names, sub_scores):
             pdf.cell(200, 8, txt=f"- {sub_name}: Score - {sub_score}", ln=True)
         pdf.ln(10)
