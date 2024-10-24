@@ -126,10 +126,10 @@ def create_pdf_report(detailed_info, charts):
     pdf.multi_cell(0, 10, txt="The report is divided into two sections. First, you will receive a radar plot that reflects any adjustments you've made by applying weights to the dimensions. If no weights were added, you will receive the default radar plot, which displays the average results based on your assessment responses. As averages may not always capture the full picture, we encourage you to delve deeper into each dimension for a more nuanced understanding. In the second section, we provide a detailed breakdown of each dimension, presented through boxplots. This helps to visualize how your use case performs across various categories. If any category was left unanswered, the values will default to three.")
     pdf.set_font("Arial", 'B', size=12)
     pdf.ln(20)
-    pdf.line
+    pdf.line(10, 30, 200, 30)
     pdf.cell(0,10, txt="DISCLAIMER:", align='C')
     pdf.multi_cell(0,10, txt="This model was developed as part of a mastersthesis and is currently a prototype. For full reliability, further validation cycles are required.", align='C')
-    pdf.line()
+    pdf.line(10, 30, 200, 30)
     pdf.ln(20)
     pdf.image(radar_chart_path, x=15, w=180)
     pdf.ln(20)
