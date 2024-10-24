@@ -18,8 +18,9 @@ if dimension not in st.session_state.responses or isinstance(st.session_state.re
 
 # Example questions for this dimension
 subdimensions = {
-    "Collaboration": [
+    "Collaborative Work": [
         "Collaborative Virtual Environments: Our use case benefits from immersive virtual environments that simulate corporate settings, include collaborative spaces, and enable multi-party remote collaboration when real-world interactions are not feasible.",
+        "Engagement: Our use-case improves user engagement by fostering social interaction, shared experiences, and aligning with societal goals through inclusive and empathetic virtual environments.",
         "Co-Creation: Our use case benefits from enabling users to generate content, participate in co-creation activities, and personalize their work environments, enhancing learning and engagement through shared and collaborative experiences."
     ],
     "Collaborative Information Layers": [
