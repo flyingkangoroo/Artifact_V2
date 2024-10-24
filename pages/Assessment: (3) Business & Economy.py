@@ -24,7 +24,6 @@ subdimensions = {
         "Budget: We have the budget and expect a positive cost-benefit ratio, with significant resource savings, through the integration of an immersive platform.",
         "Performance: We can enhance performance, reduce failure rates, and mitigate risks through the integration of an immersive platform, with confidence in the quality of our data.",
         "Data: We have the necessary data to develop and operate an industrial immersive platform."
-    
     ],
     "Operations": [
         "Operational Flexibility: Our use-case benefits from enhancing operational flexibility and making better decisions by leveraging real-time data and IIP-based simulations.",
@@ -35,7 +34,7 @@ subdimensions = {
         "New Business Models: Our use-case benefits from the development of new business models and opportunities, such as virtual goods, digital ownership, and additional distribution channels through an IIP.",
         "Virtual Retail: The integration of an IIP could enable new virtual retail channels and consumer products, offering our use-case opportunities for growth.",
         "Expanding Customer Reach: Our use-case would benefit from expanding our brand exposure to new customers and offering new communication channels with existing consumers through a virtual environment.",
-        "Enhanced Problem Solving: Our use-case can address difficult or impossible real-life problems (e.g., dangerous tasks, space limitations) through the enhanced capabilities provided by an IIP."
+        "Personalization: If we could customize our use-case and can offer individually tailored use case scenarios, we would significantly enhance our solution."
         ]
 }
 
