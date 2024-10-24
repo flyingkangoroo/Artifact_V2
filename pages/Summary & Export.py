@@ -151,10 +151,10 @@ def create_pdf_report(detailed_info, charts):
         pdf.ln(10)
         pdf.set_font("Arial", size=10)
         for sub_name, sub_score in zip(sub_names, sub_scores):
-            pdf.cell(200, 8, txt=f"- {sub_name}: Score - {sub_score}", ln=True)
+            pdf.cell(200, 10, txt=f"- {sub_name}: Score - {sub_score}", ln=True)
         pdf.ln(10)
         # Add the corresponding chart to the PDF
-        pdf.image(chart_path, x=15, w=160, align='C')
+        pdf.image(chart_path, x=15, w=160)
         pdf.ln(10)
 
     # Save the PDF to a temporary file and offer it for download
