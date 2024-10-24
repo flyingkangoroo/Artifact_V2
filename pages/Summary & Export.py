@@ -125,6 +125,7 @@ def create_pdf_report(detailed_info, charts):
     pdf.multi_cell(0, 10, txt="This report provides a detailed breakdown of the subdimension results, offering insights that contribute to the overall readiness score. The report is divided into two sections. First, you will receive a radar plot that reflects any adjustments you've made by applying weights to the dimensions. If no weights were added, you’ll receive the default radar plot, which displays the average results based on your assessment responses.")
     pdf.ln(20)
     pdf.multi_cell(0,10, txt="As averages may not always capture the full picture, we encourage you to delve deeper into each dimension for a more nuanced understanding. In the second section, we provide a detailed breakdown of each dimension, presented through boxplots. This helps to visualize how your use case performs across various categories. If any category was left unanswered, the values will default to 3.")
+    pdf.ln(20)
     pdf.image(radar_chart_path, x=15, w=180)
     pdf.ln(20)
 
