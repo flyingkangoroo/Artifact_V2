@@ -127,7 +127,7 @@ def create_pdf_report(detailed_info, charts):
     pdf.set_font("Arial", 'B', size=12)
     pdf.cell(0,10, txt="DISCLAIMER:", align='C')
     pdf.ln(20)
-    pdf.cell(0,10, txt="This model was developed as part of a mastersthesis and is currently a prototype. For full reliability, further validation cycles are required.")
+    pdf.multi_cell(0,10, txt="This model was developed as part of a mastersthesis and is currently a prototype. For full reliability, further validation cycles are required.", align='C')
     pdf.ln(20)
     pdf.image(radar_chart_path, x=15, w=180)
     pdf.ln(20)
