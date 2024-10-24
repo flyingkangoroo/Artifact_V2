@@ -22,15 +22,17 @@ subdimensions = {
         "Added Value: The integration of an immersive platform significantly enhances our use-case, adding value through new layers of information, improved simulations, or enhanced user experiences.",
         "Strategy: We have a well defined use-case’s strategy for integrating an immersive platform, with clear goals and a concept that maximizes the platform’s potential value."
     ],
-    "Corporate Readiness": [
+    "Environmental Factors": [
         "Culture: The integration of an immersive platform alignes with our company's culture, strategy, and goals, while remaining within the moral and ethical guidelines of our country.",
         "Corporate Readiness: Our organizational culture is ready to adopt an immersive platform, accepting the technology and being open to new ideas.",
-        "Political Environment: The integration of an immersive platform is possible within the current social discourse and governmental regulatory premises."
+        "Political Environment: The integration of an immersive platform is possible within the current social discourse and governmental regulatory premises.",
+        "Corporate Reputation: An immersive platform would align with the company’s brand and reputation, reinforcing the company image and benefiting our use-case by continuously ensuring the protection of sensitive information."
         ],
     "Product & User Specifics": [
         "Ease of Integration: Our use case already has technological connections in place, making the integration of immersive platforms straightforward and beneficial and users would benefit from learning through immersive environments rather than relying solely on numbers and data.",
         "User Readiness: Our users are tech-savvy, capable of translating immersive experiences into real-world contexts, and ready for a digital transformation that enhances their job performance without compromising service quality or user experience",
         "User Satisfaction: Our use case benefits from enhancing customer satisfaction through improved user engagement, experience-oriented services, and transparency, as well as by offering services that better meet user needs.",
+        "User Diversity: Our use case benefits from social interactions, enabled user diversity, and personalized strategies.",
         "Customer Journey: Our use case ensures a seamless customer experience on the immersive platform, while incorporating user feedback and understanding their needs in the current use case."
         ]
 }
