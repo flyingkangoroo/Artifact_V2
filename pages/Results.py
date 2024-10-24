@@ -43,8 +43,7 @@ if 'responses' in st.session_state:
         "Collaboration",
         "Presence",
         "Simulation & Modelling",
-        "Technical Infrastructure",
-        "Identity & Reputation"
+        "Technical Infrastructure"
     ]
 
     # Allow users to customize the weight for each dimension

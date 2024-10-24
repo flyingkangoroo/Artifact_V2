@@ -22,8 +22,7 @@ def detailed_breakdown_page():
         "Collaboration",
         "Presence",
         "Simulation & Modelling",
-        "Technical Infrastructure",
-        "Identity & Reputation"
+        "Technical Infrastructure"
     ]
 
     detailed_info = []
@@ -82,8 +81,7 @@ def create_pdf_report(detailed_info, charts):
         "Collaboration",
         "Presence",
         "Simulation & Modelling",
-        "Technical Infrastructure",
-        "Identity & Reputation"
+        "Technical Infrastructure"
     ]
     dimension_weights = st.session_state.get('dimension_weights', {dimension: 1.0 for dimension in all_dimensions})  # Use weights from session_state if available
     values = [responses.get(dimension, {}).get('overall', 3) for dimension in all_dimensions]

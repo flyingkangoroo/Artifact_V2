@@ -38,7 +38,6 @@ A simple Streamlit app designed to help evaluate the readiness of a business use
    5. *Presence*
    6. *Simulation & Modelling*
    7. *Technical Infrastructure*
-   8. *Identity & Reputation*
 
 ### Credits
 This prototype was created as a part of a masterthesis.
