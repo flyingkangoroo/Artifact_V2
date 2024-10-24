@@ -127,34 +127,13 @@ def create_pdf_report(detailed_info, charts):
     pdf.cell(200, 10, txt="Evaluating Your Business Use Case for Immersive Platform Readiness", ln=True, align='C')
     pdf.ln(20)
     pdf.set_font("Helvetica", size=12)
-    pdf.multi_cell(0, 10, txt=(
-        "The Industrial Immersive Platform (IIP) Assessment Model "
-        "is designed to evaluate the readiness of a business use case for transformation "
-        "into an immersive environment. This report provides a comprehensive breakdown of "
-        "the subdimension results, offering valuable insights that contribute to the "
-        "overall readiness score."
-    ))
-    pdf.multi_cell(0, 10, txt=(
-        "The report is divided into two sections. "
-        "First, you will receive a radar plot that reflects any adjustments you've "
-        "made by applying weights to the dimensions. If no weights were added, you’ll "
-        "receive the default radar plot, which displays the average results based on your "
-        "assessment responses. As averages may not always capture the full picture, "
-        "we encourage you to delve deeper into each dimension for a more nuanced understanding."
-    ))
-    pdf.multi_cell(0, 10, txt=(
-        "In the second section, we provide a detailed breakdown of each dimension, presented "
-        "through boxplots. This helps to visualize how your use case performs across various "
-        "categories. If any category was left unanswered, the values will default to 3."
-    ))
+    pdf.multi_cell(0, 10, txt="The Industrial Immersive Platform (IIP) Assessment Model is designed to evaluate the readiness of a business use case for transformation into an immersive environment. This report provides a comprehensive breakdown of the subdimension results, offering valuable insights that contribute to the overall readiness score."))
+    pdf.multi_cell(0, 10, txt="The report is divided into two sections. First, you will receive a radar plot that reflects any adjustments you've made by applying weights to the dimensions. If no weights were added, you’ll receive the default radar plot, which displays the average results based on your assessment responses. As averages may not always capture the full picture, we encourage you to delve deeper into each dimension for a more nuanced understanding.")
+    pdf.multi_cell(0, 10, txt="In the second section, we provide a detailed breakdown of each dimension, presented through boxplots. This helps to visualize how your use case performs across various categories. If any category was left unanswered, the values will default to 3.")
     pdf.set_font("Helvetica", style="B", size=12)
     pdf.multi_cell(0, 10, "Disclaimer:")
     pdf.set_font("Helvetica", size=12)
-    pdf.multi_cell(0, 10, txt=(
-        "Please note that the Industrial Immersive Platform Assessment Model is "
-        "currently a prototype. If you are actively evaluating a business case, "
-        "we recommend conducting further analysis based on the dimensions provided."
-    ))
+    pdf.multi_cell(0, 10, txt="Please note that the Industrial Immersive Platform Assessment Model is currently a prototype. If you are actively evaluating a business case, we recommend conducting further analysis based on the dimensions provided.")
     pdf.ln(20)
     pdf.image(radar_chart_path, x=15, w=180)
     pdf.ln(20)
