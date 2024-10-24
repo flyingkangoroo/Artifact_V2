@@ -26,7 +26,6 @@ subdimensions = {
     ],
     "Immersive Process Optimization": [
         "Process Optimization: Our use case benefits from optimizing production processes through digital models that reduce downtime, scrap, and resource waste.",
-        "Human-Machine Collaboration: Our use case benefits from integrating human-machine collaboration within immersive platforms, optimizing processes, reducing errors, and enhancing remote control capabilities.",
         "Immersive Collaboration: Our use case benefits from enabling users to collaborate and interact with others and 3D objects in a simulated environment to develop new capabilities and meet user needs.",
         "Virtual Experience Transformation: We aim to transform our real-world use case into a virtual or immersive experience to enhance accessibility, knowledge sharing, and collaboration among users."
     ]
