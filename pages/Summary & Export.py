@@ -60,7 +60,9 @@ def detailed_breakdown_page():
     st.write("### Download Report")
     st.write("""
     If you want to save your report for this use case you can download the detailed assessment by pressing the following button. Use these charts to understand specific areas of strength or those requiring improvement. 
+             \n"---"
              \n**Please make sure that you've completed the entire assessment, else the download might not work!**
+             \n"---"
              """)
     # Button to export results as PDF
     if st.button("Export Detailed Breakdown as PDF"):
