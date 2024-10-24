@@ -118,6 +118,7 @@ def create_pdf_report(detailed_info, charts):
     pdf.set_font("Arial", 'B', size=20)
     pdf.cell(200, 20, txt="IIP-Assessment Model Results", ln=True, align='C')
     pdf.ln(10)
+    pdf.line(10, 30, 200, 30)
     pdf.set_font("Arial", 'I', size=14)
     pdf.cell(200, 10, txt="Evaluating Your Business Use Case for Immersive Platform Readiness", ln=True, align='C')
     pdf.ln(20)
@@ -126,10 +127,8 @@ def create_pdf_report(detailed_info, charts):
     pdf.multi_cell(0, 10, txt="The report is divided into two sections. First, you will receive a radar plot that reflects any adjustments you've made by applying weights to the dimensions. If no weights were added, you will receive the default radar plot, which displays the average results based on your assessment responses. As averages may not always capture the full picture, we encourage you to delve deeper into each dimension for a more nuanced understanding. In the second section, we provide a detailed breakdown of each dimension, presented through boxplots. This helps to visualize how your use case performs across various categories. If any category was left unanswered, the values will default to three.")
     pdf.set_font("Arial", 'B', size=12)
     pdf.ln(20)
-    pdf.line(10, 30, 200, 30)
     pdf.cell(0,10, txt="DISCLAIMER:", align='C')
     pdf.multi_cell(0,10, txt="This model was developed as part of a mastersthesis and is currently a prototype. For full reliability, further validation cycles are required.", align='C')
-    pdf.line(10, 30, 200, 30)
     pdf.ln(20)
     pdf.image(radar_chart_path, x=15, w=180)
     pdf.ln(20)
@@ -140,7 +139,9 @@ def create_pdf_report(detailed_info, charts):
     pdf.set_font("Arial", size=12)
     pdf.cell(200, 10, txt=f"Overall Readiness Score: {final_readiness_score:.2f} / 5", ln=True, align='C')
     pdf.ln(20)
-
+    pdf.multi_cell(0,10,txt="The Overall Readiness Score provides an average assessment based on the values you entered. We recommend conducting a detailed review of each subdimension to gain a deeper understanding. This tool is intended to support your decision-making process, but it is important not to rely solely on the overall score. Use the detailed insights provided to conduct a thorough analysis that suits the specifics of your case.")
+    pdf.ln(20)
+    
     # Adding Detailed Results
     for (dimension, sub_names, sub_scores), (chart_dimension, chart_path) in zip(detailed_info, charts):
         pdf.add_page()
