@@ -47,3 +47,5 @@ Please note that this is a **prototype**. While it has been designed with rigoro
 # Add a "continue" button to return to the main page or assessment
 if st.button("continue with Assessment"):
     st.write("You can navigate using the sidebar.")
+
+st.sidebar.write("IIP Assessment Model")
