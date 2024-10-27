@@ -67,8 +67,7 @@ def detailed_breakdown_page():
              \n---
              """)
     # Button to export results as PDF
-    st.sidebar.button("Export")
-    if st.button("Export Detailed Breakdown as PDF"):
+    if st.sidebar.button("Export Detailed Breakdown as PDF"):
         create_pdf_report(detailed_info, charts)
 
 # Function to create a PDF report of the detailed breakdown
