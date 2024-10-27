@@ -161,7 +161,7 @@ def create_pdf_report(detailed_info, charts):
     with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as tmp_file:
         pdf.output(tmp_file.name)
         with open(tmp_file.name, 'rb') as f:
-            st.download_button(label="Download PDF Report", data=f.read(), file_name="detailed_breakdown_report.pdf", mime="application/pdf")
+            st.sidebar.download_button(label="Download PDF Report", data=f.read(), file_name="detailed_breakdown_report.pdf", mime="application/pdf")
 
     # Clean up the temporary chart files
     if os.path.exists(radar_chart_path):
