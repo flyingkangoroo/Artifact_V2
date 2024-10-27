@@ -94,3 +94,5 @@ if col1.button("Previous"):
 
 if col2.button("Next"):
     st.write("Navigate to the next page using the sidebar.")
+
+st.sidebar.write("IIP Assessment Model")
