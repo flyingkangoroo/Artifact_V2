@@ -31,7 +31,7 @@ subdimensions = {
 }
 
 # Collect responses
-st.title(f"Assessing the Dimension: {dimension}")
+st.title(f"Assessing the Dimension: Collaboration & Interaction")
 st.write("This dimension assesses whether current collaborative processes could be enhanced through immersive technologies. It explores how the transition to a virtual environment could support remote teamwork, co-creation, and real-time interaction. It also considers the platform's ability to replicate real-world communication dynamics, such as body language and sensory feedback, which could lead to more effective and engaging collaboration between teams or partners across locations.")
 subdimension_scores = []
 all_answered = True  # A flag to track if all questions are answered
