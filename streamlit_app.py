@@ -8,7 +8,7 @@ st.set_page_config(page_title="Business Use-Case IIP-Assessment",
 if 'responses' not in st.session_state:
     st.session_state.responses = {dimension: 3 for dimension in [
         "Accessibility", "Use Case Specifics", "Business & Economy",
-         "Collaboration", "Presence", "Simulation & Modelling", 
+         "Collaboration & Interaction", "Presence", "Simulation & Modeling", 
         "Technical Infrastructure"
     ]}
 
