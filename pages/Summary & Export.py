@@ -19,9 +19,9 @@ def detailed_breakdown_page():
         "Accessibility",
         "Use Case Specifics",
         "Business & Economy",
-        "Collaboration",
+        "Collaboration & Interaction",
         "Presence",
-        "Simulation & Modelling",
+        "Simulation & Modeling",
         "Technical Infrastructure"
     ]
 
@@ -67,7 +67,7 @@ def detailed_breakdown_page():
              \n---
              """)
     # Button to export results as PDF
-    if st.sidebar.button("Export Detailed Breakdown as PDF"):
+    if st.button("Export Detailed Breakdown as PDF"):
         create_pdf_report(detailed_info, charts)
 
 # Function to create a PDF report of the detailed breakdown
@@ -78,9 +78,9 @@ def create_pdf_report(detailed_info, charts):
         "Accessibility",
         "Use Case Specifics",
         "Business & Economy",
-        "Collaboration",
+        "Collaboration & Interaction",
         "Presence",
-        "Simulation & Modelling",
+        "Simulation & Modeling",
         "Technical Infrastructure"
     ]
     dimension_weights = st.session_state.get('dimension_weights', {dimension: 1.0 for dimension in all_dimensions})  # Use weights from session_state if available
@@ -161,7 +161,7 @@ def create_pdf_report(detailed_info, charts):
     with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as tmp_file:
         pdf.output(tmp_file.name)
         with open(tmp_file.name, 'rb') as f:
-            st.sidebar.download_button(label="Download PDF Report", data=f.read(), file_name="detailed_breakdown_report.pdf", mime="application/pdf")
+            st.download_button(label="Download PDF Report", data=f.read(), file_name="detailed_breakdown_report.pdf", mime="application/pdf")
 
     # Clean up the temporary chart files
     if os.path.exists(radar_chart_path):
