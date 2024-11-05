@@ -40,9 +40,9 @@ if 'responses' in st.session_state:
         "Accessibility",
         "Use Case Specifics",
         "Business & Economy",
-        "Collaboration",
+        "Collaboration & Interaction",
         "Presence",
-        "Simulation & Modelling",
+        "Simulation & Modeling",
         "Technical Infrastructure"
     ]
 
