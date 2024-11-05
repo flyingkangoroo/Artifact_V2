@@ -22,9 +22,9 @@ The assessment will guide you through the following eight empirical arised and v
 - **Accessibility**
 - **Use Case Specifics**
 - **Business & Economy**
-- **Collaboration**
+- **Collaboration & Interaction**
 - **Presence**
-- **Simulation & Modelling**
+- **Simulation & Modeling**
 - **Technical Infrastructure**
 
 
