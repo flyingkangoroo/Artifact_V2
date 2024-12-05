@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 
 # Define the current dimension
-dimension = "Simulation & Modelling"
+dimension = "Simulation & Modeling"
 
 # Initialize session state for storing responses if not already done
 if 'responses' not in st.session_state:
