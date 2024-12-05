@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 
 # Define the current dimension
-dimension = "Collaboration"
+dimension = "Collaboration & Interaction"
 
 # Initialize session state for storing responses if not already done
 if 'responses' not in st.session_state:
